@@ -1,0 +1,142 @@
+body{
+    background-color:rgb(44, 44, 44);
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#caixa{
+    background-color: rgb(140 140 140);
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 50px;
+    width: 400px;
+    height: 400px;
+}
+
+#formContainer{
+    display: flex;
+    justify-content: center;
+    margin: 10%;
+    width: 100%;
+}
+.text{
+    background-color:rgb(65, 65, 65); 
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 305px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-family: 'Courier New', Courier, monospace;
+    height: 10px;
+
+}
+::-webkit-input-placeholder{
+    color: white;
+}
+textarea{
+    background-color:rgb(65, 65, 65); 
+    color: white;
+    resize: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    height: 30px;
+    width: 305px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-family: 'Courier New', Courier, monospace;
+}
+label{
+   color: white;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+#textoVenda{
+    margin-top: 50px;
+    margin-left: -5%
+    
+}
+.radio{
+    margin-right: -8px;
+    cursor: pointer;
+}
+#botaoContainer{
+    display: flex;
+    justify-content: center;
+}
+#botao{
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(29, 29, 29, 0.932);
+    color: white;
+    cursor: pointer;
+}
+#botao:active{
+    background-color: rgba(255, 255, 255, 0.932);
+    color: rgb(0, 0, 0);
+}
+table{
+    border-collapse: collapse;
+    border:2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+caption{
+    margin-top: 10px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    caption-side: top;
+}
+thead,tfoot{
+    background-color: rgb(140 140 140);
+    color:black;
+
+}
+th{
+    border: 2px solid  rgb(185, 181, 181);
+    padding: 10px;
+
+}
+td{
+    border: 2px solid rgb(140 140 140);
+    background-color: rgb(185, 181, 181);
+    color: white;
+    padding: 10px;
+}
+td:last-of-type{
+    text-align: center;
+}
+tbody > tr:nth-child(odd){
+    background-color: rgb(185, 181, 181);
+    color: white;
+}
+tfoot th{
+    text-align: right;
+}
+tfoot td{
+    font-weight: bold;
+}
+.excluir{
+    background-color: rgb(248, 248, 248);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}

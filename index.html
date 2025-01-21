@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cadastro de Produtos</h1>
+
+    <div id="caixa">
+        <br>
+        <div id="formContainer">
+        <form action="" id="produtoForm">
+            <input type="text" class="text" id="nome" placeholder="Nome do Produto" required>
+            <br>
+            <textarea placeholder="Descreva o Produto" id="descricao" required></textarea>
+           <br>
+            <input type="number" class="text" id='valor' placeholder="Valor do Produto" required>
+            <br>
+            <label id="textoVenda">O Produto está disponível para venda?</label>
+           <br>               
+            <input type="radio" class="radio" name="option" value="Sim" id="sim" required> 
+            <label for="sim" class="radio" >Sim</label>  
+        
+            <input type="radio" value="Não" class="radio" name="option" id='nao'required>
+            <label for="nao">Não</label>
+
+           <br>
+        </div>
+            <div id="botaoContainer">
+            <input type="submit" id="botao" value="Cadastrar" >
+            </div>
+        </form>
+    </div>
+    <table>
+        <caption> Lista de Produtos</caption>
+        <thead>
+        <tr>
+            <th>Nome do Produto</th>
+            <th>Descrição</th>
+            <th>Valor</th>
+            <th>Disponível</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="3">
+                   Total de Produtos Cadastrados
+                </th>
+                <td id="totalProduto">0</td>
+            </tr>
+        </tfoot>
+       
+    </table>
+  
+    <script src="script.js"></script>
+</body>
+</html>
